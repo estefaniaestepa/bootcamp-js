@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera Web</title>
+</head>
+
+<body>
+  <h1>Título de mi página</h1>
+  <h2>Bienvenidos a mi web</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae hendrerit mauris. Praesent eget ultrices enim.
+    Fusce elementum tristique consectetur. Donec mattis urna id nisl pharetra fermentum vitae et arcu. Donec faucibus
+    ligula quis eros dictum cursus convallis sit amet nunc. Proin dignissim, ligula eu pharetra maximus, nisi magna
+    mattis ipsum, ut sagittis libero velit finibus urna. Sed tincidunt urna nec mi commodo vehicula. Vivamus justo
+    magna, bibendum at mauris a, varius porta dui. Vestibulum efficitur dolor eu lorem sodales, at porta turpis aliquet.
+    Quisque fringilla dignissim quam, vitae vestibulum orci fringilla vel. Nunc sit amet lorem massa. Duis tincidunt
+    arcu ac vulputate pellentesque.<br>
+
+    <p>Aenean nec nisl ex. Aenean orci metus, convallis nec pharetra sit amet, vehicula non nisl. Cras et finibus massa.
+    Suspendisse id purus nec tellus facilisis mattis in eu tellus. Praesent vulputate vehicula purus, ac bibendum nulla
+    feugiat a. Donec imperdiet mi purus, sit amet vulputate nibh dignissim ut. Morbi tincidunt vulputate ante et tempus.
+    Sed pulvinar in ante sodales rutrum. Phasellus nec dapibus sem, mattis faucibus magna. Nullam ultrices diam urna, id
+    tristique odio rutrum vel. Ut sed enim nisl.</p><br>
+
+    <p>Aenean congue turpis id nisl interdum aliquam. Praesent congue tellus ac orci venenatis, vel fermentum diam dapibus.
+    Aenean porttitor rutrum tincidunt. Sed bibendum ex vel sem convallis condimentum. Ut enim nisl, lacinia eu sem sit
+    amet, ultrices consequat lacus. 
+    Aliquam suscipit enim eu mi tristique rutrum. Maecenas et justo scelerisque,
+    consectetur arcu vel, viverra tellus. Curabitur id dolor eros. Morbi consectetur, mi vitae pellentesque consectetur,
+    erat est aliquet ante, vel hendrerit nulla metus ut est. Nam molestie porttitor dignissim. Donec consequat eget elit
+    sed sollicitudin. Donec vitae odio sapien. Donec egestas metus magna, non scelerisque ligula imperdiet et. Mauris
+    molestie semper posuere.</p>
+
+    <hr/>
+<h2>Imágenes en HTML</h2>
+<img src="img/descarga.jpg" alt="imagen de un animal" title="imagen de un animal" width="450px">
+    <hr/>
+    <h2>Bienvenidos a mi web</h2>
+  <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit. </strong>In vitae hendrerit mauris. Praesent eget ultrices enim.
+    Fusce elementum tristique consectetur. Donec mattis urna id nisl pharetra fermentum vitae et arcu. Donec faucibus
+    ligula <em>quis eros dictum cursus convallis sit amet nunc.</em> Proin dignissim, ligula eu pharetra maximus, nisi magna
+    mattis ipsum, ut sagittis libero velit finibus urna. Sed tincidunt urna nec mi commodo vehicula. Vivamus justo
+    magna, bibendum at <span id="resaltado" class="rojo amarillo"> mauris a, varius porta dui. Vestibulum efficitur dolor eu lorem sodales, at porta turpis aliquet.
+    </span>Quisque fringilla dignissim quam, vitae vestibulum orci fringilla vel. Nunc sit amet lorem massa. Duis tincidunt
+    <i>arcu ac vulputate pellentesque</i></p><br>
+
+    <p>Aenean nec nisl ex. Aenean orci metus, convallis nec pharetra sit amet, vehicula non nisl. Cras et finibus massa.
+    Suspendisse id purus nec tellus facilisis mattis in eu tellus. Praesent vulputate vehicula purus, ac bibendum nulla
+    feugiat a.<blockquote></blockquote> Donec imperdiet mi purus, sit amet vulputate nibh dignissim ut. Morbi tincidunt vulputate ante et tempus.
+    Sed pulvinar in ante sodales rutrum. Phasellus nec dapibus sem, mattis faucibus magna. Nullam ultrices diam urna, id
+    tristique odio rutrum vel. Ut sed enim nisl</blockquote></p>
+
+    <h3>Formulario</h3>
+    <form>
+      <P>
+      <label for="nombre">Nombre</label>
+      <imput type="text" name="nombre" placeholder="escribe tu nombre"/>
+    </P>
+    <P>
+      <label for="descripcion">Descripción</label>
+      <textarea name="descripcion"></textarea>
+    </P>
+    <imput type="radio" name="genero" value="hombre"> Hombre <br/>
+      <imput type="radio" name="genero" value="mujer"> Mujer <br/>
+        <imput type="radio" name="genero" value="nada"> No definido<br/>
+
+          <select name="generodos">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="nada">Nada</option>
+          </select>
+          
+          <input type="submit" value="enviar formulario">
+    </form>
+
+    <h3>Listado de frutas</h3>
+    <ol>
+      <li>Naranja</li>
+      <li>Pera</li>
+      <li>Sandía</li>
+      <li>Melón</li>
+
+    </ol>
+
+    <h3>listado de frutas</h3>
+    <ul>
+      <li>Naranja
+        <ul>
+          <li>Roja</li>
+          <li>Verde</li>
+        </ul>
+      </li>
+      <li>Pera</li>
+      <li>Sandía</li>
+      <li>Melón</li>
+    </ul>
+
+    <h3>Tablas</h3>
+    <table border="1">
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>País</th>
+      </tr>
+      <tr>
+        <td>Estefania</td>
+        <td>Estepa</td>
+        <td>España</td>
+      </tr>
+      <tr>
+        <td>Gabriel</td>
+        <td colpan="2">Estepa</td>
+      </tr>
+    </table>
+</body>
+
+</html>
