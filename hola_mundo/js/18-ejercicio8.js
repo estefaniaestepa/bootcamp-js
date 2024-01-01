@@ -32,3 +32,4 @@ var resultadoCMD = ("La suma es: " +(numero1+numero2)+"\n"+ /*volveremos a copia
  document.write(resultado) ; /*para que nos escriba el resultado*/
  alert (resultadoCMD);/*queremos que nos lo muestre en una alerta*/ /*Nos va a dar un problema y es que estamos utilizando br y esto hace un salto de linea en HTML pero para mostrar un salto de linea en cualquier consola o lenguaje de programacion tendriamos que utilizar el \n */
 console.log (resultadoCMD); /*si hacemos un console.log y le ponemos como parametro la funcion CMD nos lo pondrá por la consola correctamente*/
+
