@@ -1,6 +1,8 @@
 'use strict'
 
-/*EVENTOS DEL RATON*/
+window.addEventListener('load'), function({  /* DE ESTA MANERA CUANDO LA PAGINA ESTE CARGADA ES CUANDO SE VAN A EJECUTAR TODOS LOS ELEMETOS DEL JS QUE ACCEDE AL DOM Y A LOS ELEMENTOS DE HTML */
+
+/* EVENTOS DEL RATON */
 
 var boton =document.querySelector ("#boton"); /*capturar o seleccionar un boton y recogemos con el elemento el id*/
 
@@ -58,3 +60,48 @@ return true;
   boton.addEventListener('mouseout', function(){ /*con el evento .addEventListener utilizamos 'mouseover' y hacemos la funcion a modo de callback*/
   boton.style.background= "#ccc"; 
 })
+
+
+
+/*Focus*/
+var input = document.querySelector("#campo_nombre"); /*primero tenemos que capturar o seleccionar el campo*/
+
+input.addEventListener('focus', function(){ /*estamos capturando el evento 'focus'* del campo input con un id #campo_nombre*/
+console.log ("[focus] Estas dentro del input"); /* podemeos indicar al evento que se esta lanzando haremos console log para probar cada uno de nuestros eventos, esto aparece en la consola*/
+
+});
+
+
+
+/*Blur*/
+input.addEventListener('blur', function(){ /*es igual que el focus solamente cuando salimos del foco*/
+console.log ("[blur] Estas fuera del input"); /*podemeos indicar al evento que se esta lanzando haremos console log para probar cada uno de nuestros eventos, esto aparece en la consola*/
+
+});
+
+
+
+/*Keydown*/
+input.addEventListener('keydown', function(event){ /*el keydown sucede cuando estas pulsando una tecla a function le pasamos el parametro event*/
+console.log ("[keydown]Pulsando esta tecla ", string.fromCharCode(event.keyCode)); /*  podemos sacar la tecla que es lo concatenaremos string.fromCharCode esto sirve para capturar cosas del teclado y capturamos lo que sale en el evento(event.keyCode) con esto sabemos que tecla estamos pulsando, todas las teclas que pulsamos en el input aparecen en consola  */
+
+});
+
+
+
+/*Keypress*/
+input.addEventListener('keypress', function(event){ /*el keypress sucede cuando ees cuando presiono una tecla*/
+console.log ("[keypress]Tecla presionada ", string.fromCharCode(event.keyCode));
+
+});
+
+
+
+/*Keyup*/
+input.addEventListener('keyup', function(event){ /*el keyup nps permite capturar el evento cuando levantamos el dedo de la tecla*/
+console.log ("[keyup]Tecla soltada ", string.fromCharCode(event.keyCode));
+
+});
+
+}); /*el final del losd EN LOAD*/
+
