@@ -5,33 +5,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio DOM, Eventos y funciones</title>
-<!--   <script type="text/javascript" scr="js/32-ejercicio_dom"></script> -->
+  <script type="text/javascript" scr="js/32-ejercicio_dom"></script>
+
+  <style>
+    .box {
+      width: 200px;
+      height: 250px;
+      float: left;
+      margin: 20px;
+    }
+
+    .dashed {
+      border: 3px dashed black;
+      padding: 5px;
+    }
+  </style>
 </head>
 
 <body>
-<!--   1. Formulario campos: Nombre, apellidos y edad
+  <!--   1. Formulario campos: Nombre, apellidos y edad
   2. Boton de enviar el formulario: Eventos submit
   3. Mostrar datos por pantalla
-  4. tener un botón que al darle click nos muestra los datos actuales del formulario -->
+  4. validacion del formulario -->
 
   <h1>Ejercicio DOM, Eventos y funciones-Curso JS victorroblesweb.es</h1>
-<p>
-  <form action="#" method="POST" id="formulario" onsubmit="return false;">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" name="nombre" id="nombre"><br>
-    
-    <label for="apellidos">Apellidos:</label><br>
-    <input type="text" name="apellidos" id="apellidos"><br>
-    
-    <label for="edad">Edad:</label><br>
-    <input type="text" name="edad" id="edad"><br>
+  <div class="box">
+    <form action="#" method="POST" id="formulario" onsubmit="return false;">
 
-    <input type="submit" value="Enviar" id="submit"><br>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" name="nombre" id="nombre" /><br>
+      <spam id="error_nombre"></spam>
+      
+      <label for="apellidos">Apellidos:</label><br>
+      <input type="text" name="apellidos" id="apellidos" /><br>
 
-  </form>
-</p>
+      <label for="edad">Edad:</label><br>
+      <input type="number" name="edad" id="edad" /><br>
 
-<script scr="js/32-ejercicio_dom"></script>
+      <input type="submit" value="Enviar" id="submit"><br>
+
+    </form>
+  </div>
+
+  <div class="box dashed">
+    <h3>Información del usuario</h3>
+    <hr>
+
+    <p id="p_nombre">
+      Nombre: <spam></spam>
+    </p>
+
+    <p id="p_apellidos">
+      Apellidos: <spam></spam>
+    </p>
+
+    <p id="p_edad">
+      Edad: <spam></spam>
+    </p>
+
+  </div>
+
+<!--     <script scr="js/32-ejercicio_dom"></script> -->
 </body>
 
 </html>

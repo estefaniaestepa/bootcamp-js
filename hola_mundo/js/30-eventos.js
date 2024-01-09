@@ -1,6 +1,6 @@
 'use strict'
 
-window.addEventListener('load'), function({  /* DE ESTA MANERA CUANDO LA PAGINA ESTE CARGADA ES CUANDO SE VAN A EJECUTAR TODOS LOS ELEMETOS DEL JS QUE ACCEDE AL DOM Y A LOS ELEMENTOS DE HTML */
+/* window.addEventListener('load'), function({ */  /* DE ESTA MANERA CUANDO LA PAGINA ESTE CARGADA ES CUANDO SE VAN A EJECUTAR TODOS LOS ELEMETOS DEL JS QUE ACCEDE AL DOM Y A LOS ELEMENTOS DE HTML */
 
 /* EVENTOS DEL RATON */
 
@@ -43,6 +43,8 @@ return true;
 
   boton.addEventListener('click', function(){
     cambiarColor();
+    console.log(this);
+    this.style.border= "10px solid black";
   });
 
 
@@ -103,5 +105,5 @@ console.log ("[keyup]Tecla soltada ", string.fromCharCode(event.keyCode));
 
 });
 
-}); /*el final del losd EN LOAD*/
+/* }); */ /*el final del losd EN LOAD*/
 
